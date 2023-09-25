@@ -1,0 +1,10 @@
+<%= stylesheet_link_tag "sprash", media: "all", 'data-turbolinks-track': "reload" %>
+
+<div class="container">
+  <h1 class="main-heading">Welcome to my Budget App</h1>
+  <p class="tagline">Please login or signup below</p>
+  <div class="auth-links">
+    <%= link_to "Sign Up", new_registration_path(@user), class: "btn btn-secondary" %> |
+    <%= link_to "Log In", new_session_path(@user), class: "btn btn-secondary" %>
+  </div>
+</div>

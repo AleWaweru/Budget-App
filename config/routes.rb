@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root 'static_pages#splash'
+  devise_for :users
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # This should be a block within `devise_scope :user`
+  devise_scope :user do
+    get 'users/show', to: 'users#show', as: 'user_show'
+  end
+
+  resources :categories, only: [:index, :show, :new, :create]
+  resources :transactions, only: [:index, :show, :new, :create]
 end
