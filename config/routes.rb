@@ -7,5 +7,4 @@ Rails.application.routes.draw do
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # This should be a block within `devise_scope :user`
 end
