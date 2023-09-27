@@ -17,7 +17,7 @@ gem 'rspec-rails', '~> 5.0'
 
 gem 'rails', '~> 7.0.8'
 
-gem 'devise'
+gem 'devise', '~> 4.9.0'
 
 gem 'concurrent-ruby', '>= 1.1.0'
 
