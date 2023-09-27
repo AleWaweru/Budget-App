@@ -19,6 +19,8 @@ gem 'rails', '~> 7.0.8'
 
 gem 'devise'
 
+gem 'concurrent-ruby', '~> 1.2.2'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
