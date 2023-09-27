@@ -1,0 +1,18 @@
+<%= form_with(model: @transaction, url: category_transactions_path(@category), local: true) do |f| %>
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amount %>
+    <%= f.text_field :amount %>
+  </div>
+
+  <div class="field">
+    <%= f.label :category_id %>
+    <%= f.collection_select :category_id, Category.all, :id, :name %>
+  </div>
+  
+  <%= f.submit 'Save' %>
+<% end %>

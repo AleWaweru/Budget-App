@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-header">
+    <h1 class="card-title">Transactions for <%= @category.name %></h1>
+  </div>
+  <div class="card-body">
+    <%= link_to 'Add a new transaction', new_category_transaction_path(@category), class: 'btn btn-primary btn-sm' %>
+    <% @category.transactions.each do |transaction| %>
+      <div class="card  bg-white">
+        <div class="card-body">
+          Description: <%= transaction.description %>
+        </div>
+        <div class="card-body">
+        Amount: $<%= transaction.amount %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="card-footer">
+    <%= link_to 'Back', categories_path, class: 'btn btn-secondary' %>
+  </div>
+</div>
