@@ -298,7 +298,7 @@ DEPENDENCIES
   bootsnap
   bootstrap
   capybara
-  concurrent-ruby (~> 1.2.2)
+  concurrent-ruby (>= 1.1.0)
   debug
   devise
   factory_bot_rails
