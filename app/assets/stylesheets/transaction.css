@@ -21,7 +21,6 @@ body {
 }
 
 .card-header {
-  background-color: #fff;
   margin-left: 5px;
   margin-top: 5px;
 }
@@ -105,7 +104,6 @@ body {
 
   .nav-btn {
     display: flex;
-    background-color: rgb(8, 8, 8);
     margin: 0;
     padding: 3px;
     gap: 3.5rem;
