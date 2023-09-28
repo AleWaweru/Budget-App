@@ -175,7 +175,7 @@ If you like this project give me a follow and/or a star
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse for giving me this opportunity to build this amazing project. 
-I would also like to thank **Gregoire Vella** for the wonderful design template. I would also like to thank my mentors for their guidance and support. Lastly, I would like to thank the open-source community for their contribution to the open-source ecosystem. Without their contribution, creating this project would not have been possible. Thank you all. 🙏
+I would also like to thank **Gregoire Vella**(https://www.behance.net/gallery/19759151/Snapscan) for the wonderful design template. I would also like to thank my mentors for their guidance and support. Lastly, I would like to thank the open-source community for their contribution to the open-source ecosystem. Without their contribution, creating this project would not have been possible. Thank you all. 🙏
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

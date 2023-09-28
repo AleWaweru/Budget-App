@@ -38,15 +38,6 @@
   border-radius: 5px;
   transition: background-color 0.3s;
   margin: 0 10px;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.btn-secondary {
-  background-color: #6c757d;
   color: #fff;
 }
 

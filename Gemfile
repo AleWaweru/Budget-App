@@ -13,6 +13,8 @@ gem 'bootstrap', '~> 5.2.1'
 
 gem 'sassc-rails'
 
+gem 'webrick'
+
 gem 'rspec-rails', '~> 5.0'
 
 gem 'rails', '~> 7.0.8'

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#splash'
+  root 'static_pages#splash'
   devise_for :users
   resources :users, only: [:index, :show, :new, :create]
   resources :categories, only: [:index, :show, :new, :create, :destroy] do

@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:splash] # Exempt 'splash' action from authentication
 
   protect_from_forgery with: :exception
 

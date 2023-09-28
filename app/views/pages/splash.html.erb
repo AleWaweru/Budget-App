@@ -1,9 +1,0 @@
-<%= stylesheet_link_tag 'splash', media: 'all', 'data-turbolinks-track': 'reload' %>
-
-<div class="splash-container">
-  <h1 class="splash-title">Welcome to My Budget App</h1>
-  <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-link sign-out-button" %> 
-  <p class="splash-description">Track your expenses with ease.</p>
-  <%= link_to 'Go', new_user_session_path, class: 'btn btn-secondary' %>
-</div>
-
