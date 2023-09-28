@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag 'transaction', media: 'all', 'data-turbolinks-track': 'reload' %>
+<div class="card">
+<div class="total-transactions">
+  <h2>Total Amount: $<%= @total_amount %></h2>
+</div>
+  <div class="card-header">
+    <h1 class="card-title">Transactions for <%= @category.name %></h1>
+  </div>
+  <div class="card-body">
+  <div>
+    <%= link_to 'Add a new transaction', new_category_transaction_path(@category), class: 'btn btn-primary btn-sm' %>
+    </div>
+    <% @category.transactions.each do |transaction| %>
+      <div class="card  bg-white d-flex justify-content-between align-items-center">
+        <div class="card-body">
+          Description: <%= transaction.description %>
+        </div>
+        <div class="card-body">
+        Amount: $<%= transaction.amount %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="card-footer">
+    <%= link_to 'Back', categories_path, class: 'btn btn-secondary' %>
+  </div>
+</div>

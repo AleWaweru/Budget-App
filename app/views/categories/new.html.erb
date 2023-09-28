@@ -1,0 +1,12 @@
+<%= form_for @category do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+ <div class="field">
+  <%= f.label :icon %>
+  <%= f.select :icon, options_for_select(['fas fa-home', 'fas fa-car', 'fas fa-coffee']), {}, { class: 'form-control' } %>
+  <small class="text-muted">For icons, use Font Awesome classes.</small>
+</div>
+  <%= f.submit "Save" %>
+<% end %>

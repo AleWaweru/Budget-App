@@ -1,0 +1,10 @@
+<h1>Category Details</h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @category.name %>
+</p>
+
+<!-- Add other category details if needed -->
+
+<%= button_to 'Delete', category_path(@category), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>

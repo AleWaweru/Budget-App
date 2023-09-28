@@ -1,0 +1,86 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.total-transactions {
+  background-color: #f0f0f0;
+  padding: 0.2rem;
+}
+
+.total-transactions h2 {
+  font-size: 15px;
+  float: right;
+}
+
+.card-header {
+  background-color: #f0f0f0;
+  padding: 0.6rem 0.6rem;
+}
+
+.card-body {
+  padding: 0.5rem;
+}
+
+.transaction-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-details {
+  margin-right: 1rem;
+}
+
+.details-right {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.button-links {
+  text-align: right;
+}
+
+.button-link {
+  text-align: right;
+  float: right;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  gap: 50rem;
+}
+
+.icon {
+  font-size: 5rem;
+}
+
+@media (max-width: 768px) {
+  .button-link {
+    text-align: right;
+    width: 70%; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-bottom: 10px;
+  }
+
+  .button-links {
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    background-color: #f0f0f0;
+    width: 100%;
+    gap: 4rem;
+  }
+
+  .nav-btn1 {
+    display: flex;
+    margin: 0;
+    padding: 3px;
+    height: auto;
+    background: none;
+  }
+}

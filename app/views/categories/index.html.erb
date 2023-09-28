@@ -1,0 +1,56 @@
+<%= stylesheet_link_tag 'category', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<div class="navbar">
+  <div class="nav-btn1">
+    <%= link_to 'New category', new_category_path, class: 'btn btn-primary' %>
+  </div>
+  
+  <div class="nav-btn1" style="float: right;">
+    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-danger' %>
+  </div>
+</div>
+
+<div class="row">
+  <% @categories.each do |category| %>
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+      <div class="card">
+        <div class="total-transactions">
+          <h2>Total Amount: $<%= category.total_amount %></h2>
+        </div>
+        <div class="card-header">
+          <b><%= link_to category.name, category_transactions_path(category) %></b>
+        </div>
+        <div class="card-body">
+          <% category.transactions.each do |transaction| %>
+            <div class="transaction-details">
+              <div class="card-details">
+                <i class="icon <%= category.icon %>"></i>
+              </div>
+              <div class="details-right">
+                <div class="card-details text-right">
+                  <p class='text-muted'>Description: <b><%= transaction.description %></b></p>
+                </div>
+                <div class="card-details text-right">
+                  <p> Amount: <b> $<%= transaction.amount %></b></p>
+                </div>
+                 <div class="button-link text-right">
+                <%= link_to 'Delete Transaction', category_transaction_path(category, transaction), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-success' %>
+              </div>
+              </div>
+              </div>
+            </div>
+          <% end %>
+          <div class="button-links text-right">
+          <%= link_to 'New transaction', new_category_transaction_path(category), class: 'btn btn-primary text-right' %>
+          <%= link_to 'Delete Category', category_path(category), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-success' %>
+        </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<div class="nav-btn">
+  <%= link_to 'Back', root_path, class: 'btn btn-secondary' %>
+</div>
+

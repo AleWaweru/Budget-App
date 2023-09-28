@@ -1,0 +1,10 @@
+<%= stylesheet_link_tag "splash", media: "all", 'data-turbolinks-track': "reload" %>
+
+<div style="text-align: center;  margin: 0 auto;">
+  <h1 style="font-size: 2em; margin-bottom: 80px;">Welcome to my Budget App</h1>
+  <p style="font-size: 1.2em; margin-bottom: 80px;">Please login or signup below</p>
+  <div>
+    <%= link_to "Sign Up", new_registration_path(@user), class: "btn btn-secondary btn-lg", style: "display: inline-block; width: 80%; font-size: 1.5em; padding: 10px 20px; text-align: center; text-decoration: none; color: #fff; background-color: #007bff; margin-bottom: 10px;" %>
+    <%= link_to "Log In", new_session_path(@user), class: "btn btn-secondary btn-lg", style: "display: inline-block; width: 80%; font-size: 1.5em; padding: 10px 20px; text-align: center; text-decoration: none; color: #fff; background-color: #28a745; margin-bottom: 10px;" %>
+  </div>
+</div>

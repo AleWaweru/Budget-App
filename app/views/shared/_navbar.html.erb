@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+   <div class="container-fluid text-white"> 
+     <a class="navbar-brand"></a> 
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+       <span class="navbar-toggler-icon"></span> 
+     </button> 
+    <div class="collapse navbar-collapse" id="navbarNav"> <!-- Fixed the id -->
+       <ul class="navbar-nav ml-auto"> <!-- Added ml-auto to align items to the right -->
+         <% if user_signed_in? %> 
+
+          <li class="nav-item"> 
+             <%= link_to "Home", root_path, class: "nav-link" %>
+         </li>
+
+         <li class="nav-item"> 
+             <%= link_to "Nav one", '#' ,class: "nav-link" %>
+           </li> 
+  
+           <li class="nav-item"> 
+             <%= button_to "Sign Out", destroy_user_session_path, method: :delete, form_class: "nav-link" %> 
+           </li> 
+  
+         <% else %> 
+           
+         <% end %> 
+       </ul> 
+     </div> 
+ </nav>
